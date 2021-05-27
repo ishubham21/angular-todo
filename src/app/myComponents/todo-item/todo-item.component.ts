@@ -10,6 +10,7 @@ export class TodoItemComponent implements OnInit {
 
   @Input() todo!: Todo
   @Output() todoDelete: EventEmitter<Todo> = new EventEmitter()
+  @Output() todoStrike: EventEmitter<Todo> = new EventEmitter()
   constructor() { }
 
   ngOnInit(): void {
