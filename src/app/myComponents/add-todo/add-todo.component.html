@@ -1,0 +1,10 @@
+<h4>Add a Todo</h4>
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="todo" class="form-label">Todo</label>
+        <input type="text" class="form-control" id="title" name="title" [(ngModel)]="title">
+        <label for="desc" class="form-label">Todo-Desc</label>
+        <input type="text" class="form-control" id="desc" name="desc" [(ngModel)]="desc">
+    </div>
+    <button type="submit" class="btn btn-primary">Add Todo</button>
+</form>
